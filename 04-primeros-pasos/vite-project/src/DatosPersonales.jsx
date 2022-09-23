@@ -7,32 +7,32 @@ const  fechaNacimiento = () => {
     return <p>06/04/2000</p>
 }
 
-export const DaatosPersonales = ({ saludo,edad } ) =>{
+export const DatosPersonales = ({saludo,edad} ) =>{
 
   return (
     <>
-      <h1>Hola</h1>
+      <h1 data-testid="custom-element2">Hola</h1>
         <p>Nombre: Leonardo</p>
         <p>Apellido: Borja</p>
         {fechaNacimiento() }
-        <p>{saludo}</p>
+        <div data-testid="custom-element" >{saludo}</div>
         <p>Con edad: {edad}</p>
     </>
   );
 }
 
 //Sirve para validar las propiedades que se le envian al componente
-DaatosPersonales.propTypes = {
+DatosPersonales.propTypes = {
     //Es obligatorio que se envie el parametro
     saludo: PropTypes.string.isRequired,
     edad : PropTypes.number.isRequired
 }
 
 // Sirve para darle un valor por defecto a las propiedades
-DaatosPersonales.defaultProps = {
-    edad: 18,
-    saludo : "Hola",
-    name: "Leonardo"
+DatosPersonales.defaultProps = {
+  saludo : "Hola",
+  edad: 18,
+  name: "Leonardo"
 }
 //Exportamos el componente para poder usarlo en otros archivos
 

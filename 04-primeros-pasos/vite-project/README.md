@@ -32,6 +32,9 @@ https://babeljs.io/docs/en/babel-preset-react
  **isomorphic-fetch**
 isomorphic-fetch -> Para poder hacer peticiones a una api
 
+## Buscar informacion en Jest acerca de los metodos ocupados en clase 
+https://jestjs.io/docs/expect
+
 ## Informacion clave de React
 **Componentes basados en funciones**
 Son componentes que no tienen estado, solo reciben props y retornan un elemento de React.
@@ -99,4 +102,10 @@ yarn add -D jest-environment-jsdom -> Para poder hacer pruebas con jest
 
 ```
 npm install --save-dev @babel/preset-env -> Para poder usar react en babel
+```
+
+
+### Fracasos - para intentar mas tade 
+```
+    expect(getByText(saludo)).toBeTruthy(); // -> No funciona
 ```
