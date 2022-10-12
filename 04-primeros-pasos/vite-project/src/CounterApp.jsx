@@ -31,7 +31,12 @@ export const CounterApp = ({ value }) => {
       <h2>{counter}</h2>
       <button onClick={handleAdd}>+1</button>
       <button onClick={handleResta}>-1</button>
-      <button onClick={valorInicial}>Reset</button>
+      <button aria-label="btn-resert" onClick={valorInicial}>Reset</button>
+      {/* Se puede tomar el ID el arial-label */}
+      
+      {/* <button name="btn-resert" onClick={valorInicial}>Reset</button> */}
+      {/* <button ="btidn-resert" onClick={valorInicial}>Reset</button> */}
+
     </>
   );
 };
